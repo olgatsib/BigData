@@ -1,6 +1,7 @@
 BigData
 =======
 
-Tools for working with large data sets for educational purposes.
+Tools for working with large datasets (up to 0.5 TB, a billion vertices graph) for educational purposes.
  
-Pig/Hadoop scripts to run on the Amazon Elastic MapReduce.
+Pig/Hadoop scripts to run datasets of 2GB and 0.5TB on the Amazon Elastic MapReduce.
+
