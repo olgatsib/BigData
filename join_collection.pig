@@ -11,7 +11,7 @@ subject_filter = FILTER ntriples BY subject MATCHES '.*rdfabout\\.com.*';
 copy_subject_filter = FOREACH subject_filter GENERATE subject as subject2, predicate as predicate2, object as object2;
 
 -- join the two copies
-collection_join = JOIN subject_filter BY object, copy__subject_filter by subject2;
+collection_join = JOIN subject_filter BY object, copy_subject_filter by subject2;
 
 -- remove duplicate tuples
 collection = DISTINCT collection_join;
